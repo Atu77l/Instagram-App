@@ -8,7 +8,6 @@ const router = express.Router();
 export const getPosts = async (req, res) => { 
     try {
         const postMessages = await PostMessage.find();
-                
         res.status(200).json(postMessages);
     } catch (error) {
         res.status(404).json({ message: error.message });
@@ -17,7 +16,7 @@ export const getPosts = async (req, res) => {
 
 export const getPost = async (req, res) => { 
     const { id } = req.params;
-
+    
     try {
         const post = await PostMessage.findById(id);
         
@@ -28,6 +27,7 @@ export const getPost = async (req, res) => {
 }
 
 export const createPost = async (req, res) => {
+    
     const { title, message, selectedFile, creator, tags } = req.body;
 
     const newPostMessage = new PostMessage({ title, message, selectedFile, creator, tags })

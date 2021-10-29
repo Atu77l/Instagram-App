@@ -1,0 +1,118 @@
+/* Login form style sheet */
+.head1{
+    font-size: 45px;
+    padding:15px;
+    color: whitesmoke;
+    text-align: center;
+    background-color:black;
+    border-radius: 8px 8px 0px 0px;
+}
+.form1{
+    align-items: center;
+    background-color: #708090;
+    height:400px;
+    width:33%;
+    margin:300px;
+    border-radius: 8px;
+}
+.label1{
+  font-size: 25px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  padding:25px;
+}
+.input1{
+     border-radius: 5px;
+     height: 30px;
+     width: 200px;
+}
+.input2{
+     background-color: chartreuse;
+     border-radius: 5px;
+     height:30px;
+     width:150px;
+     padding-right: 20px;
+     margin-left: 100px;
+     margin-top: 20px;
+}
+/* Register form style Sheet */
+.head2{
+    font-size: 50px;
+    color:whitesmoke;
+    background-color: black;
+    text-align: center;
+    border-radius: 8px 8px 0px 0px;
+    padding-bottom: 15px;
+}
+.form2{
+    margin:250px;
+    align-content: center;
+    text-align: center;
+    height: 600px;
+    width: 33%;
+    background-color: slategrey;
+    border-radius: 8px;
+}
+.label2{
+    font-size: 30px;
+    padding:10px;
+    margin-top: 10px;
+    /* margin-left: 60px;
+    margin-right: 60px; */
+    
+}
+.input3{
+    height: 40px;
+    width: 150px;
+    padding-top: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-left: 40px;
+}
+.div1{
+    display:inline;
+    float:left;
+}
+.input4{
+    height:40px;
+    background-color:springgreen;
+    width: 150px;
+    margin-left: 80px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Menu bar style sheet */
+.search{
+    display:inline-flex;
+    padding-left: 40px;
+}
+.search1{
+    display:inline-flex;
+    padding-left: 100px;
+}
+.main1{
+    background-color: navy;
+}
+/* footer in Our Site */
+.div4{
+    background-color: mediumslateblue;
+    position: relative;
+    bottom: 0%;
+    height:360px;
+    text-align: center;
+    width: 100%;
+}
+.head4{
+    display:inline-flex;
+    padding-top: 60px;
+    color:midnightblue
+}
+.head5{
+    display:inline-flex;
+    color:midnightblue
+}
+.head6{
+    display:inline-flex;
+    color:midnightblue
+}

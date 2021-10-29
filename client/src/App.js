@@ -8,6 +8,13 @@ import { getPosts } from './actions/posts';
 import useStyles from './styles';
 import memories from './images/memories.png';
 
+import Menu from './Navbar.js';
+import Login from './Login.js';
+import Signup from './Register.js';
+import Footer from './Footer.js';
+import { Switch,Route } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+
 const App = () => {
   const [currentId, setCurrentId] = useState(0);
   const dispatch = useDispatch();
@@ -19,6 +26,16 @@ const App = () => {
 
   return (
     <Container maxWidth="lg">
+    
+   
+    {/* <Switch>
+   <Route path='/Login'>
+     <Login/>
+   </Route>
+   <Route path='/Signup'>
+     <Signup/>
+   </Route> */}
+   {/* </Switch> */}
       <AppBar className={classes.appBar} position="static" color="inherit">
         <Typography className={classes.heading} variant="h2" align="center">Memories</Typography>
         <img className={classes.image} src={memories} alt="icon" height="60" />
@@ -32,10 +49,16 @@ const App = () => {
             <Grid item xs={12} sm={4}>
               <Form currentId={currentId} setCurrentId={setCurrentId} />
             </Grid>
+            <Grid item xs={12} sm={4}>
+              <Login />
+            </Grid>
           </Grid>
         </Container>
       </Grow>
+    
     </Container>
+    
+
   );
 };
 
